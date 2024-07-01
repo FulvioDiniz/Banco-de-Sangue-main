@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+
+<GridPane fx:id="gridPane" alignment="CENTER" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poov.controledoacaosangue.controller.TelaCadastroDoacaoController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    
+    <Label text="Código Doador:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="codigoDoadorField" GridPane.rowIndex="0" GridPane.columnIndex="1" editable="false"/>
+
+    <Label text="Nome Doador:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="nomeDoadorField" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="false"/>
+
+    <Label text="CPF Doador:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="cpfDoadorField" GridPane.rowIndex="2" GridPane.columnIndex="1" editable="false"/>
+
+    <Label text="Volume Doação (ml):" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="volumeField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <Label text="Data:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <TextField fx:id="dataField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <Label text="Hora:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <TextField fx:id="horaField" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+    <Button text="Cadastrar" onAction="#handleCadastrar" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+    <Button text="Cancelar" onAction="#handleCancelar" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+</GridPane>
