@@ -94,7 +94,6 @@
                </HBox>
                <HBox layoutX="54.0" layoutY="531.0" prefHeight="26.0" prefWidth="708.0" spacing="10">
                   <Button fx:id="cadastrarDoacaoButton" onAction="#cadastrarDoacao" text="Cadastrar Doação" />
-                  <Button fx:id="verDoacoesButton" onAction="#verDoacoes" text="Ver Doações" />
                   <Button fx:id="alterarDoadorButton" onAction="#alterarDoador" text="Alterar Doador" />
                   <Button fx:id="removerDoadorButton" onAction="#removerDoador" text="Remover Doador" />
                   <Button fx:id="fecharButton" onAction="#fechar" text="Fechar" />

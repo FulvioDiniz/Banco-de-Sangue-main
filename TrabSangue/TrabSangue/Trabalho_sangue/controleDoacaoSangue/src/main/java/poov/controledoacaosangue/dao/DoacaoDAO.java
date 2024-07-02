@@ -114,6 +114,9 @@ public class DoacaoDAO extends GenericJDBCDAO<Doacao, Long> {
             query += " and hora BETWEEN ? AND ?";
         }
 
+
+        
+
         try (PreparedStatement statement = connection.prepareStatement(query)) {
             if (filtroMin.getCodigo() != null && filtroMax.getCodigo() != null) {
                 statement.setLong(parametro++, filtroMin.getCodigo());

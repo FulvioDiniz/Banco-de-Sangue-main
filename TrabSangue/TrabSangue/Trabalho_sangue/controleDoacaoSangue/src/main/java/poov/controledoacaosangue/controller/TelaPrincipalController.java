@@ -487,10 +487,7 @@ public class TelaPrincipalController implements Initializable {
         }
     }
 
-    @FXML
-    void verDoacoes(ActionEvent event) {
-        // Não implementado
-    }
+
 
     @FXML
     void buscarDoacao(ActionEvent event) {
